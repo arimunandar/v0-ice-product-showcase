@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "firebase:login": "npx firebase-tools login",
+    "firebase:init": "npx firebase-tools init",
+    "firebase:deploy": "npx firebase-tools deploy"
   },
   "dependencies": {
     "@emotion/is-prop-valid": "latest",
@@ -49,6 +52,7 @@
     "lucide-react": "^0.454.0",
     "next": "15.2.4",
     "next-themes": "^0.4.4",
+    "or": "^0.2.0",
     "react": "^19",
     "react-day-picker": "8.10.1",
     "react-dom": "^19",
@@ -65,8 +69,24 @@
     "@types/node": "^22",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "firebase-tools": "^14.3.1",
     "postcss": "^8",
     "tailwindcss": "^3.4.17",
     "typescript": "^5"
-  }
+  },
+  "description": "*Automatically synced with your [v0.dev](https://v0.dev) deployments*",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arimunandar/v0-ice-product-showcase.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arimunandar/v0-ice-product-showcase/issues"
+  },
+  "homepage": "https://github.com/arimunandar/v0-ice-product-showcase#readme"
 }

@@ -3,16 +3,21 @@ import "./globals.css"
 import { Inter } from "next/font/google"
 import type { Metadata } from "next"
 import Link from "next/link"
-import { Snowflake, Menu, Phone, ShoppingCart, Mail, MapPin } from "lucide-react"
+import Image from "next/image"
+import { Snowflake, Menu, Phone, ShoppingCart, Mail, MapPin, Clock } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { ThemeProvider } from "@/components/theme-provider"
 
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Produk Es Premium",
-  description: "Produk es berkualitas tinggi untuk semua kebutuhan Anda - Es Tabung, Es Kubus, dan Es Serut",
-    generator: 'v0.dev'
+  title: "Es Kristal Bangjon Payakumbuh",
+  description: "Es Kristal Bangjon Payakumbuh merupakan produsen Es Kristal terbesar di kota Payakumbuh",
+  generator: 'v0.dev',
+  icons: {
+    icon: '/logo.png',
+    apple: '/logo.png'
+  }
 }
 
 export default function RootLayout({
@@ -29,41 +34,38 @@ export default function RootLayout({
               <div className="container flex h-16 items-center justify-between px-4 md:px-6">
                 <div className="flex items-center gap-2">
                   <Link href="/" className="flex items-center gap-2">
-                    <Snowflake className="h-6 w-6 text-blue-600" />
-                    <span className="text-xl font-bold">ProdukEs</span>
+                    <Image src="/logo.png" alt="Es Kristal Bangjon" width={40} height={40} className="h-10 w-auto" />
+                    <span className="text-xl font-bold">Es Kristal Bangjon</span>
                   </Link>
                 </div>
                 <nav className="hidden md:flex gap-6">
-                  <Link href="#products" className="text-sm font-medium hover:text-blue-600 transition-colors">
-                    Produk
+                  <Link href="/" className="text-sm font-medium hover:text-blue-600 transition-colors">
+                    Home
                   </Link>
                   <Link href="#about-factory" className="text-sm font-medium hover:text-blue-600 transition-colors">
-                    Tentang Pabrik
+                    About
                   </Link>
-                  <Link href="#gallery" className="text-sm font-medium hover:text-blue-600 transition-colors">
-                    Galeri
-                  </Link>
-                  <Link href="#about-owner" className="text-sm font-medium hover:text-blue-600 transition-colors">
-                    Tentang Pemilik
-                  </Link>
-                  <Link href="#packages" className="text-sm font-medium hover:text-blue-600 transition-colors">
-                    Ukuran Paket
+                  <Link href="#products" className="text-sm font-medium hover:text-blue-600 transition-colors">
+                    Product
                   </Link>
                   <Link href="#contact" className="text-sm font-medium hover:text-blue-600 transition-colors">
-                    Kontak
+                    Contact
                   </Link>
                 </nav>
                 <div className="flex items-center gap-4">
                   <Link
-                    href="#contact"
+                    href="https://wa.me/6281222264990"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="hidden md:flex items-center gap-2 text-sm font-medium hover:text-blue-600 transition-colors"
                   >
-                    <Phone className="h-4 w-4" />
-                    (555) 123-4567
+                    0812-2226-4990
                   </Link>
-                  <Button variant="outline" size="sm" className="hidden md:flex items-center gap-2">
-                    <ShoppingCart className="h-4 w-4" />
-                    Pesan Sekarang
+                  <Button variant="outline" size="sm" className="hidden md:flex items-center gap-2" asChild>
+                    <Link href="https://wa.me/6281222264990?text=Halo,%20saya%20ingin%20memesan%20es%20kristal" target="_blank" rel="noopener noreferrer">
+                      <ShoppingCart className="h-4 w-4" />
+                      Pesan Sekarang
+                    </Link>
                   </Button>
                   <Button variant="ghost" size="icon" className="md:hidden">
                     <Menu className="h-6 w-6" />
@@ -78,84 +80,42 @@ export default function RootLayout({
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
                   <div className="space-y-4">
                     <Link href="/" className="flex items-center gap-2">
-                      <Snowflake className="h-6 w-6 text-blue-600" />
-                      <span className="text-xl font-bold">ProdukEs</span>
+                      <Image src="/logo.png" alt="Es Kristal Bangjon" width={40} height={40} className="h-10 w-auto" />
+                      <span className="text-xl font-bold">Es Kristal Bangjon</span>
                     </Link>
                     <p className="text-sm text-gray-600">
-                      Produk es berkualitas premium untuk semua kebutuhan Anda. Dibuat dengan air murni dan teknologi
-                      mutakhir.
+                      Es Kristal Bangjon Payakumbuh merupakan produsen Es Kristal terbesar di kota Payakumbuh. Es Kristal kami di produksi secara higienis dengan melewati proses filtrasi dan sterilisasi.
                     </p>
                   </div>
                   <div className="space-y-4">
-                    <h3 className="text-lg font-semibold">Produk</h3>
+                    <h3 className="text-lg font-semibold">Navigation</h3>
                     <ul className="space-y-2 text-sm text-gray-600">
                       <li>
-                        <Link href="#products" className="hover:text-blue-600 transition-colors">
-                          Es Tabung
+                        <Link href="/" className="hover:text-blue-600 transition-colors">
+                          Home
                         </Link>
                       </li>
-                      <li>
-                        <Link href="#products" className="hover:text-blue-600 transition-colors">
-                          Es Kubus
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="#products" className="hover:text-blue-600 transition-colors">
-                          Es Serut
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="#packages" className="hover:text-blue-600 transition-colors">
-                          Ukuran Paket
-                        </Link>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="space-y-4">
-                    <h3 className="text-lg font-semibold">Perusahaan</h3>
-                    <ul className="space-y-2 text-sm text-gray-600">
                       <li>
                         <Link href="#about-factory" className="hover:text-blue-600 transition-colors">
-                          Tentang Pabrik
+                          About
                         </Link>
                       </li>
                       <li>
-                        <Link href="#about-owner" className="hover:text-blue-600 transition-colors">
-                          Tentang Pemilik
+                        <Link href="#products" className="hover:text-blue-600 transition-colors">
+                          Product
                         </Link>
                       </li>
                       <li>
-                        <Link href="#gallery" className="hover:text-blue-600 transition-colors">
-                          Galeri
+                        <Link href="#contact" className="hover:text-blue-600 transition-colors">
+                          Contact
                         </Link>
                       </li>
-                      <li>
-                        <Link href="#testimonials" className="hover:text-blue-600 transition-colors">
-                          Testimoni
-                        </Link>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="space-y-4">
-                    <h3 className="text-lg font-semibold">Contact</h3>
-                    <ul className="space-y-2 text-sm text-gray-600">
-                      <li className="flex items-start">
-                        <Phone className="h-5 w-5 mr-2 text-blue-600" />
-                        <span>(555) 123-4567</span>
-                      </li>
-                      <li className="flex items-start">
-                        <Mail className="h-5 w-5 mr-2 text-blue-600" />
-                        <span>info@iceproducts.com</span>
-                      </li>
-                      <li className="flex items-start">
-                        <MapPin className="h-5 w-5 mr-2 text-blue-600" />
-                        <span>123 Frost Avenue, Iceville, CA 90210</span>
-                      </li>
+
                     </ul>
                   </div>
                 </div>
                 <div className="mt-12 border-t pt-8 text-center text-sm text-gray-600">
-                  <p>© {new Date().getFullYear()} ProdukEs. Hak Cipta Dilindungi.</p>
+                  <p>© 2025 ProdukEs. Hak Cipta Dilindungi.</p>
                 </div>
               </div>
             </footer>

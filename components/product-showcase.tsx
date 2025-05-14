@@ -63,7 +63,7 @@ export default function ProductShowcase() {
     <section id="products" className="py-24 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">Produk Es Premium Kami</h2>
+          <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">Produk</h2>
           <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
             Temukan berbagai produk es berkualitas tinggi kami, dibuat dengan air murni dan teknologi mutakhir.
           </p>

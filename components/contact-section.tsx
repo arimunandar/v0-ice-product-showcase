@@ -57,11 +57,6 @@ export default function ContactSection() {
             className="space-y-8"
           >
             <h3 className="text-2xl font-bold text-gray-900">Hubungi Kami</h3>
-            <p className="text-gray-600">
-              Baik Anda memiliki pertanyaan tentang produk kami, membutuhkan penawaran khusus, atau ingin melakukan
-              pemesanan, tim kami siap membantu. Isi formulir atau gunakan informasi kontak kami di bawah ini.
-            </p>
-
             <div className="space-y-6">
               <div className="flex items-start">
                 <div className="flex-shrink-0">
@@ -71,7 +66,14 @@ export default function ContactSection() {
                 </div>
                 <div className="ml-4">
                   <h4 className="text-lg font-medium text-gray-900">Telepon</h4>
-                  <p className="mt-1 text-gray-600">(555) 123-4567</p>
+                  <a 
+                    href="https://wa.me/6281222264990" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="mt-1 text-gray-600 hover:text-blue-600 transition-colors flex items-center"
+                  >
+                    0812-2226-4990
+                  </a>
                 </div>
               </div>
 
@@ -83,7 +85,7 @@ export default function ContactSection() {
                 </div>
                 <div className="ml-4">
                   <h4 className="text-lg font-medium text-gray-900">Email</h4>
-                  <p className="mt-1 text-gray-600">info@produk-es.com</p>
+                  <p className="mt-1 text-gray-600">payakumbuheskristal@gmail.com</p>
                 </div>
               </div>
 
@@ -95,7 +97,7 @@ export default function ContactSection() {
                 </div>
                 <div className="ml-4">
                   <h4 className="text-lg font-medium text-gray-900">Lokasi</h4>
-                  <p className="mt-1 text-gray-600">Jl. Es No. 123, Kota Es, Jakarta 12345</p>
+                  <p className="mt-1 text-gray-600">Jalan Pahlawan No.9 RT002/RW02, Kel Padang Tiakar, Kec. Payakumbuh Timur, Kota Payakumbuh, Sumatera Barat, 26229</p>
                 </div>
               </div>
 
@@ -106,10 +108,31 @@ export default function ContactSection() {
                   </div>
                 </div>
                 <div className="ml-4">
-                  <h4 className="text-lg font-medium text-gray-900">Jam Kerja</h4>
-                  <p className="mt-1 text-gray-600">Senin - Jumat: 08.00 - 18.00</p>
-                  <p className="text-gray-600">Sabtu: 09.00 - 15.00</p>
-                  <p className="text-gray-600">Minggu: Tutup</p>
+                  <h4 className="text-lg font-medium text-gray-900">Jam Operasi</h4>
+                  <p className="mt-1 text-gray-600">Setiap hari: 09.00 - 21.00</p>
+                </div>
+              </div>
+              
+              <div className="flex items-start">
+                <div className="flex-shrink-0">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-100 text-blue-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6">
+                      <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                      <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                    </svg>
+                  </div>
+                </div>
+                <div className="ml-4">
+                  <h4 className="text-lg font-medium text-gray-900">Instagram</h4>
+                  <a 
+                    href="https://www.instagram.com/payakumbuh_es_kristal" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="mt-1 text-gray-600 hover:text-blue-600 transition-colors flex items-center"
+                  >
+                    @payakumbuh_es_kristal
+                  </a>
                 </div>
               </div>
             </div>

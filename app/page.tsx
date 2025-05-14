@@ -5,9 +5,7 @@ import { Button } from "@/components/ui/button"
 import ProductShowcase from "@/components/product-showcase"
 import AboutFactory from "@/components/about-factory"
 import PhotoGallery from "@/components/photo-gallery"
-import AboutOwner from "@/components/about-owner"
 import PackageSizes from "@/components/package-sizes"
-import Testimonials from "@/components/testimonials"
 import ContactSection from "@/components/contact-section"
 
 export default function Home() {
@@ -21,17 +19,12 @@ export default function Home() {
         <div className="relative mx-auto max-w-7xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <div className="inline-flex items-center rounded-full bg-blue-50 px-3 py-1 text-sm font-medium text-blue-800">
-                <Snowflake className="mr-1 h-4 w-4" />
-                Es Kualitas Premium
-              </div>
               <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
-                <span className="block">Murni, Jernih Kristal</span>
-                <span className="block text-blue-600">Produk Es</span>
+                <span className="block">Es Kristal Bangjon</span>
+                <span className="block text-blue-600">Payakumbuh</span>
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-600">
-                Rasakan perbedaan dengan produk es premium kami. Sempurna untuk acara, bisnis, dan penggunaan
-                sehari-hari. Dibuat dengan air murni dan teknologi mutakhir.
+              Keep it cool with excellence quality & services!
               </p>
               <div className="mt-8 flex gap-x-4">
                 <Button size="lg">
@@ -66,13 +59,13 @@ export default function Home() {
       <PhotoGallery />
 
       {/* About Owner Section */}
-      <AboutOwner />
+      {/* <AboutOwner /> */}
 
       {/* Package Sizes */}
-      <PackageSizes />
+      {/* <PackageSizes /> */}
 
       {/* Testimonials */}
-      <Testimonials />
+      {/* <Testimonials /> */}
 
       {/* Contact Section */}
       <ContactSection />
