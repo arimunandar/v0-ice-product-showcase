@@ -48,6 +48,9 @@ export default function RootLayout({
                   <Link href="#products" className="text-sm font-medium hover:text-blue-600 transition-colors">
                     Product
                   </Link>
+                  <Link href="#gallery" className="text-sm font-medium hover:text-blue-600 transition-colors">
+                    Gallery
+                  </Link>
                   <Link href="#contact" className="text-sm font-medium hover:text-blue-600 transition-colors">
                     Contact
                   </Link>
@@ -103,6 +106,11 @@ export default function RootLayout({
                       <li>
                         <Link href="#products" className="hover:text-blue-600 transition-colors">
                           Product
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="#gallery" className="hover:text-blue-600 transition-colors">
+                          Gallery
                         </Link>
                       </li>
                       <li>

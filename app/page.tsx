@@ -48,12 +48,12 @@ export default function Home() {
           </div>
         </div>
       </section>
+      
+      {/* About Factory Section */}
+      <AboutFactory />
 
       {/* Product Showcase Section */}
       <ProductShowcase />
-
-      {/* About Factory Section */}
-      <AboutFactory />
 
       {/* Photo Gallery */}
       <PhotoGallery />
